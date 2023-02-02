@@ -1,0 +1,9 @@
+{
+    "quiz_dir": {
+        "02557": "01 입출력과 사칙연산/01 02557 Hello World"
+    },
+
+    "src_path": {
+        "python": "python/src.py"
+    }
+}
