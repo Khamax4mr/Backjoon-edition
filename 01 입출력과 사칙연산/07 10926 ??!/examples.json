@@ -1,0 +1,6 @@
+{
+    "examples": [
+        {"input": ["joonas"], "output": ["joonas??!"]},
+        {"input": ["baekjoon"], "output": ["baekjoon??!"]}
+    ]
+}
