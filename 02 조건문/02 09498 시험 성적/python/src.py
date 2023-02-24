@@ -1,9 +1,7 @@
 from sys import exit
 
 # 점수 score 입력.
-inputs = input().split()
-score = int(inputs[0])
-
+score = int(input())
 if score < 0 or score > 100: exit()
 
 # 출력.
