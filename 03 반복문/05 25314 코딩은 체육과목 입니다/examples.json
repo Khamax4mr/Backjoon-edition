@@ -1,0 +1,6 @@
+{
+    "examples": [
+        {"input": ["4"], "output": ["long int"]},
+        {"input": ["20"], "output": ["long long long long long int"]}
+    ]
+}
