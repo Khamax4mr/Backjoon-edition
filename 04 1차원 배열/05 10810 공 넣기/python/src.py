@@ -15,8 +15,11 @@ for process_iter in range(m):
     if j < 1 or j > n: exit(0)
     if k < 1 or k > n: exit(0)
 
+    # 0번부터 시작하는 번호 보정.
+    correct_i = i - 1
+
     # 바구니에 공 투입.
-    for basket_iter in range(i - 1, j):
+    for basket_iter in range(correct_i, j):
         basket[basket_iter] = k
 
 # 출력.
