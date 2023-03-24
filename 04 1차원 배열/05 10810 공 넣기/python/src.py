@@ -17,8 +17,6 @@ for process_iter in range(m):
 
     # 0번부터 시작하는 번호 보정.
     correct_i = i - 1
-
-    # 바구니에 공 투입.
     for basket_iter in range(correct_i, j):
         basket[basket_iter] = k
 
