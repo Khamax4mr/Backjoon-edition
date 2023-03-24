@@ -17,8 +17,6 @@ for process_iter in range(m):
     # 0번부터 시작하는 번호 보정.
     correct_i = i - 1
     correct_j = j - 1
-
-    # 바구니 공 교체.
     basket[correct_i], basket[correct_j] = basket[correct_j], basket[correct_i]
 
 # 출력.
