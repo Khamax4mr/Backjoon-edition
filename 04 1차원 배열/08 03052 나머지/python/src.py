@@ -1,7 +1,7 @@
 from sys import exit
 
 # 나머지 유무 초기화.
-remainer = [False for i in range(42)]
+remainer = [False] * 42
 
 for i in range(10):
     # 숫자 n 입력.
