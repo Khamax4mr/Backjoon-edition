@@ -1,7 +1,7 @@
 from sys import exit
 
 # 제출 여부 초기화.
-submit = [False for i in range(30)]
+submit = [False] * 30
 
 for i in range(28):
     # 제출 번호 n 입력.
