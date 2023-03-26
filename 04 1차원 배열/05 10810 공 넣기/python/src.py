@@ -6,7 +6,7 @@ if n < 1 or n > 100: exit(0)
 if m < 1 or m > 100: exit(0)
 
 # 바구니 공 번호 초기화.
-basket = [0 for i in range(n)]
+basket = [0] * n
 
 for process_iter in range(m):
     # 시작 바구니 번호 i, 끝 바구니 번호 j, 공 번호 k 입력.
@@ -17,8 +17,9 @@ for process_iter in range(m):
 
     # 0번부터 시작하는 번호 보정.
     correct_i = i - 1
-    for basket_iter in range(correct_i, j):
-        basket[basket_iter] = k
+    correct_j = j - 1
+    interval = j - i + 1
+    basket[correct_i : correct_j + 1] = [k] * interval
 
 # 출력.
 print(' '.join(list(map(str, basket))))
