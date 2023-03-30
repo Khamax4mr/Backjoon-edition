@@ -1,0 +1,7 @@
+{
+    "examples": [
+        {"input": ["Sprout", "3"], "output": ["r"]},
+        {"input": ["shiftpsh", "6"], "output": ["p"]},
+        {"input": ["Baekjoon", "4"], "output": ["k"]}
+    ]
+}
