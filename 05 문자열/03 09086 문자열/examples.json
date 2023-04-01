@@ -1,0 +1,5 @@
+{
+    "examples": [
+        {"input": ["3", "ACDKJFOWIEGHE", "O", "AB"], "output": ["AE", "OO", "AB"]}
+    ]
+}
