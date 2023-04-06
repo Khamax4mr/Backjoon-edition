@@ -5,5 +5,4 @@ id = input()
 if len(id) > 50: exit()
 if False in [a.islower() for a in id]: exit()
 
-# 출력.
 print(id + "??!")

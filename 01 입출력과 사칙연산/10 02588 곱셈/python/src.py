@@ -6,7 +6,6 @@ b = int(input())
 if a < 100 or a >= 1000: exit()
 if b < 100 or b >= 1000: exit()
 
-# 출력.
 print(a * (b % 10))
 print(a * (b % 100 // 10))
 print(a * (b % 1000 // 100))
