@@ -6,7 +6,7 @@ if a < 1 or a > 6: exit(0)
 if b < 1 or b > 6: exit(0)
 if c < 1 or c > 6: exit(0)
 
-# 상금 계산 및 출력.
+# 상금 계산.
 if a == b == c:
     print(10000 + a * 1000)
 elif a == b or a == c:

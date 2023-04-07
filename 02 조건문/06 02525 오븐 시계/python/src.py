@@ -13,6 +13,4 @@ cooking_m = c % 60
 carry = (b + cooking_m) // 60
 b = (b + cooking_m) % 60
 a = (a + cooking_h + carry) % 24
-
-# 출력.
 print(a, b)
