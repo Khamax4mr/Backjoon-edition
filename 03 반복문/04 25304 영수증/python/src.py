@@ -15,9 +15,7 @@ for i in range(n):
     a, b = map(int, input().split())
     if a < 1 or a > 1000000: exit(0)
     if b < 1 or b > 10: exit(0)
-
-    # 물건 구매 금액 추가.
+    
     sum += a * b
 
-# 출력.
 print("Yes" if x == sum else "No")

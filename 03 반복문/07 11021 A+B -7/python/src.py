@@ -10,5 +10,4 @@ for i in range(1, t+1):
     if a <= 0 or a >= 10: exit(0)
     if b <= 0 or b >= 10: exit(0)
 
-    # 출력.
     print('Case #' + str(i) + ':', (a + b))

@@ -10,5 +10,4 @@ for i in range(t):
     if a < 1 or a > 1000: exit(0)
     if b < 1 or b > 1000: exit(0)
 
-    # 출력.
     print(a + b)

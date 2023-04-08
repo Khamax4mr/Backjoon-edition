@@ -4,5 +4,4 @@ from sys import exit
 n = int(input())
 if n < 4 or n > 1000 or n % 4: exit(0)
 
-# 출력.
 print('long ' * (n // 4) + 'int')
