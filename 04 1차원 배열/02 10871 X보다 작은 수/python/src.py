@@ -10,6 +10,5 @@ a = list(map(int, input().split()))
 for elem in a:
     if elem < 1 or elem > 10000: exit(0)
 
-# 출력.
 numbers_under_x = [elem for elem in a if elem < x]
 print(' '.join(list(map(str, numbers_under_x))))

@@ -13,6 +13,4 @@ for score in scores:
 m = max(scores)
 if m == 0: exit(0)
 scores = [score / m * 100 for score in scores]
-
-# 출력.
 print(sum(scores) / len(scores))

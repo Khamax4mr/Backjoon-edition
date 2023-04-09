@@ -13,5 +13,4 @@ for elem in numbers:
 v = int(input())
 if v < -100 or v > 100: exit(0)
 
-# 출력.
 print(numbers.count(v))

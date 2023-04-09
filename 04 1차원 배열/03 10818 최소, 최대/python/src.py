@@ -9,5 +9,4 @@ numbers = list(map(int, input().split()))
 for elem in numbers:
     if elem < -1000000 or elem > 1000000: exit(0)
 
-# 출력.
 print(min(numbers), max(numbers))
