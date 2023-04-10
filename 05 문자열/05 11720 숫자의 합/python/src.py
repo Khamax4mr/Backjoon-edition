@@ -9,5 +9,4 @@ numbers = list(map(int, input()))
 for number in numbers:
     if number < 0 or number > 9: exit(0)
 
-# 출력.
 print(sum(numbers))

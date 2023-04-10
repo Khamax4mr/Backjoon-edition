@@ -9,5 +9,4 @@ for i in range(t):
     string = input()
     if len(string) < 1 or len(string) > 1000: exit(0)
 
-    # 출력.
     print(string[0] + string[-1])
