@@ -1,0 +1,6 @@
+{
+    "examples": [
+        {"input": ["WA"], "output": ["13"]},
+        {"input": ["UNUCIC"], "output": ["36"]}
+    ]
+}
