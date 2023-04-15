@@ -1,0 +1,6 @@
+{
+    "examples": [
+        {"input": ["Hello", "Baekjoon", "Online Judge"],
+        "output": ["Hello", "Baekjoon", "Online Judge"]}
+    ]
+}
