@@ -6,8 +6,7 @@ if n < 1 or n > 100: exit(0)
 
 # 정수 입력.
 numbers = list(map(int, input().split()))
-for elem in numbers:
-    if elem < -100 or elem > 100: exit(0)
+if True in [number < -100 or number > 100 for number in numbers]: exit(0)
 
 # 타겟 숫자 v 입력.
 v = int(input())

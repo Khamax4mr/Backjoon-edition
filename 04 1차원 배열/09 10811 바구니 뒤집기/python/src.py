@@ -13,8 +13,6 @@ for process_iter in range(m):
     if i < 1 or i > n: exit(0)
     if j < 1 or j > n: exit(0)
 
-    reversed_basket = basket[i : j+1]
-    reversed_basket.reverse()
-    basket[i : j+1] = reversed_basket
+    basket[i:j+1] = reversed(basket[i:j+1])
 
-print(' '.join(list(map(str, basket))))
+print(' '.join(list(map(str, basket[1:]))))

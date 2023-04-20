@@ -6,7 +6,6 @@ if n < 1 or n > 1000000: exit(0)
 
 # 배열 numbers 입력.
 numbers = list(map(int, input().split()))
-for elem in numbers:
-    if elem < -1000000 or elem > 1000000: exit(0)
+if True in [number < -1000000 or number > 1000000 for number in numbers]: exit(0)
 
 print(min(numbers), max(numbers))

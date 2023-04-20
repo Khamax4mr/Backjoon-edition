@@ -1,15 +1,10 @@
 from sys import exit
 
-# 제출 여부 구성.
-submit = [False] * 31
-for i in range(28):
-    # 제출 번호 n 입력.
-    n = int(input())
-    if n < 1 or n > 30: exit(0)
-    
-    submit[n] = True
+# 제출 번호 n 입력.
+n = [int(input()) for i in range(28)]
+if True in [submit < 1 or submit > 30 for submit in n]: exit(0)
 
-# 미제출 번호 출력.
+# 제출 여부 구성.
 for i in range(1, 31):
-    if submit[i] == True: continue
+    if i in n: continue
     print(i)

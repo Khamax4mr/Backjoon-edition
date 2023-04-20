@@ -6,8 +6,7 @@ if n < 0 or n > 1000: exit(0)
 
 # 점수 scores 입력.
 scores = list(map(int, input().split()))
-for score in scores:
-    if score < 0 or score > 100: exit(0)
+if True in [score < 0 or score > 100 for score in scores]: exit(0)
 
 # 최대 점수 m 기준 점수 조작.
 m = max(scores)

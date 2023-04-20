@@ -6,7 +6,7 @@ if n < 1 or n > 100: exit(0)
 if m < 1 or m > 100: exit(0)
 
 # 바구니 배치.
-basket = [i for i in range(n + 1)]
+basket = [i for i in range(n+1)]
 for process_iter in range(m):
     # 바구니 번호 i, j 입력.
     i, j = map(int, input().split())
