@@ -4,10 +4,10 @@ from sys import exit
 t = int(input())
 if t < 0: exit(0)
 
-for i in range(1, t+1):
+for i in range(t):
     # 숫자 a, b 입력.
     a, b = map(int, input().split())
     if a <= 0 or a >= 10: exit(0)
     if b <= 0 or b >= 10: exit(0)
 
-    print('Case #' + str(i) + ':', a, '+', b, '=', a + b)
+    print(f"Case #{i+1}: {a} + {b} = {a + b}")
