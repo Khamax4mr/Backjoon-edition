@@ -6,7 +6,5 @@ if n < 1 or n > 100: exit(0)
 
 # 공백 없는 숫자들 numbers 입력.
 numbers = list(map(int, input()))
-for number in numbers:
-    if number < 0 or number > 9: exit(0)
-
+if True in [number < 0 or number > 9 for number in numbers]: exit(0)
 print(sum(numbers))
