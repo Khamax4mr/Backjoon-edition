@@ -1,0 +1,6 @@
+{
+    "examples": [
+        {"input": ["level"], "output": ["1"]},
+        {"input": ["baekjoon"], "output": ["0"]}
+    ]
+}
