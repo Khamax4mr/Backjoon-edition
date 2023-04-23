@@ -1,0 +1,8 @@
+{
+    "examples": [
+        {"input": ["Mississipi"], "output": ["?"]},
+        {"input": ["zZa"], "output": ["Z"]},
+        {"input": ["z"], "output": ["Z"]},
+        {"input": ["baaa"], "output": ["A"]}
+    ]
+}
