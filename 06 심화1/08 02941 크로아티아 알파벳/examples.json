@@ -1,0 +1,9 @@
+{
+    "examples": [
+        {"input": ["ljes=njak"], "output": ["6"]},
+        {"input": ["ddz=z="], "output": ["3"]},
+        {"input": ["nljj"], "output": ["3"]},
+        {"input": ["c=c="], "output": ["2"]},
+        {"input": ["dz=ak"], "output": ["3"]}
+    ]
+}
