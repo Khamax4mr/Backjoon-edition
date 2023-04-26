@@ -4,7 +4,7 @@ from sys import exit
 t = int(input())
 if t < 1 or t > 1000: exit(0)
 
-for i in range(t):
+for _ in range(t):
     # 반복 횟수 r (정수형 repeats), 문자열 s 입력.
     r, s = input().split()
     repeats = int(r)

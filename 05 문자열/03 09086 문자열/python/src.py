@@ -4,7 +4,7 @@ from sys import exit
 t = int(input())
 if t < 1 or t > 10: exit(0)
 
-for i in range(t):
+for _ in range(t):
     # 문자열 string 입력.
     string = input()
     if len(string) < 1 or len(string) > 1000: exit(0)

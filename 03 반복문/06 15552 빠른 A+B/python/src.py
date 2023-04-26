@@ -4,7 +4,7 @@ from sys import exit, stdin
 t = int(stdin.readline().rstrip())
 if t < 0 or t > 1000000: exit(0)
 
-for i in range(t):
+for _ in range(t):
     # 숫자 a, b 입력.
     a, b = map(int, stdin.readline().rstrip().split())
     if a < 1 or a > 1000: exit(0)

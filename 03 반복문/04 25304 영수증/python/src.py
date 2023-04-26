@@ -10,7 +10,7 @@ if n < 1 or n > 100: exit(0)
 
 # 영수증 총 금액 합산.
 sum = 0
-for i in range(n):
+for _ in range(n):
     # 물건의 가격, 금액 a, b 입력.
     a, b = map(int, input().split())
     if a < 1 or a > 1000000: exit(0)
