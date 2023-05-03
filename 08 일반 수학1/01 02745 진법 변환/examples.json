@@ -1,0 +1,5 @@
+{
+    "examples": [
+        {"input": ["ZZZZZ 36"], "output": ["60466175"]}
+    ]
+}
