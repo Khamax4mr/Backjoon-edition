@@ -1,0 +1,5 @@
+{
+    "examples": [
+        {"input": ["8 16", "32 4", "17 5", "0 0"], "output": ["factor", "multiple", "neither"]}
+    ]
+}
