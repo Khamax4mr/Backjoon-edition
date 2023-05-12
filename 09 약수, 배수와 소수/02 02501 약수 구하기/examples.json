@@ -1,0 +1,7 @@
+{
+    "examples": [
+        {"input": ["6 3"], "output": ["3"]},
+        {"input": ["25 4"], "output": ["0"]},
+        {"input": ["2735 1"], "output": ["1"]}
+    ]
+}
