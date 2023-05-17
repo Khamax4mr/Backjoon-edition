@@ -1,4 +1,5 @@
 from sys import exit
+from math import sqrt
 
 while True:
     # 숫자 a, b 입력.
@@ -8,5 +9,5 @@ while True:
     if b < 0 or b > 10000: exit(0)
 
     if a % b == 0: print('multiple')
-    elif True in [not (a%i or b%i) for i in range(2, b//2)]: print('factor')
+    elif True in [not (a%i or b%i) for i in range(2, int(sqrt(b))+1)]: print('factor')
     else: print('neither')
