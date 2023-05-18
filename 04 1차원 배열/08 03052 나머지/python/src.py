@@ -4,6 +4,5 @@ from sys import exit
 n = [int(input()) for _ in range(10)]
 if True in [number < 0 or number > 1000 for number in n]: exit(0)
 
-# 나머지 구성.
 remainer = [number % 42 for number in n]
 print(len(set(remainer)))
