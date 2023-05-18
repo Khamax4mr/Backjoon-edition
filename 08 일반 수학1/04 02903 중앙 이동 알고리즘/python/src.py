@@ -4,8 +4,7 @@ from sys import exit
 n = int(input())
 if n < 1 or n > 15: exit(0)
 
-row_dots = [2]
+row_dots = 2
 for i in range(n):
-    row_dots.append(row_dots[i] + 2**i)
-
-print(row_dots[n]**2)
+    row_dots += 2**i
+print(row_dots**2)

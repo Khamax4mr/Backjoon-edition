@@ -8,8 +8,4 @@ for _ in range(t):
     c = int(input())
     if c < 1 or c > 500: exit(0)
 
-    quarter = c // 25
-    dime = (c % 25) // 10
-    nickle = (c % 25 % 10) // 5
-    penny = c % 5
-    print(quarter, dime, nickle, penny)
+    print(c // 25, (c%25) // 10, (c%25%10) // 5, c % 5)
