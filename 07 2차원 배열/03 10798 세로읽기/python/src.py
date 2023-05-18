@@ -10,5 +10,4 @@ for i in range(5):
         vertical_dummy_word[j*5 + i] = word[j]
 
 # 불필요한 더미 기호 제거.
-vertical_word = ''.join(map(str, vertical_dummy_word)).replace('*', '')
-print(vertical_word)
+print(''.join(map(str, vertical_dummy_word)).replace('*', ''))

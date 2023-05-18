@@ -10,4 +10,4 @@ for _ in range(9):
 max_number = max(matrix)
 max_pos = matrix.index(max_number)
 print(max_number)
-print(max_pos // 9 + 1, max_pos % 9 + 1)
+print(max_pos//9 + 1, max_pos%9 + 1)
