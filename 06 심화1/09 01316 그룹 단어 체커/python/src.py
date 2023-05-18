@@ -11,12 +11,11 @@ for _ in range(n):
     if len(word) > 100: exit(0)
 
     # 알파벳 사용 내역 확인.
-    used_alphabets, recent_alphabet = [], '*'
+    used_alphabets = ['*']
     for i in range(len(word)):
-        if recent_alphabet == word[i]: continue
-        if word[i] not in used_alphabets:
+        if used_alphabets[-1] == word[i]: continue
+        elif word[i] not in used_alphabets:
             used_alphabets.append(word[i])
-            recent_alphabet = word[i]
         else:
             group_words -= 1
             break

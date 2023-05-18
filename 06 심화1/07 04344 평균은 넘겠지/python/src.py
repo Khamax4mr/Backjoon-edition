@@ -5,8 +5,8 @@ c = int(input())
 
 for tasetcase_id in range(c):
     # 학생 수 n, 점수 scores 입력.
-    testcase = list(map(int, input().split()))
-    n, scores = testcase[0], testcase[1:]
+    input_data = list(map(int, input().split()))
+    n, scores = input_data[0], input_data[1:]
     if n < 1 or n > 1000: exit(0)
     if True in [score < 0 or score > 100 for score in scores]: exit(0)
 

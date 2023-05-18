@@ -9,4 +9,4 @@ if bishop < 0 or bishop > 10: exit(0)
 if knight < 0 or knight > 10: exit(0)
 if pawn < 0 or pawn > 10: exit(0)
 
-print(1 - king, 1 - queen, 2 - rook, 2 - bishop, 2 - knight, 8 - pawn)
+print(1-king, 1-queen, 2-rook, 2-bishop, 2-knight, 8-pawn)
