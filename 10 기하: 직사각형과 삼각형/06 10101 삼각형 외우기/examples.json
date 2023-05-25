@@ -1,0 +1,5 @@
+{
+    "examples": [
+        {"input": ["60", "70", "50"], "output": ["Scalene"]}
+    ]
+}
