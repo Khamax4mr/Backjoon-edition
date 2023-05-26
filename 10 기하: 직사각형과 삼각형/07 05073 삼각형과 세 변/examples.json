@@ -1,0 +1,8 @@
+{
+    "examples": [
+        {
+            "input": ["7 7 7", "6 5 4", "3 2 5", "6 2 6", "0 0 0"],
+            "output": ["Equilateral", "Scalene", "Invalid", "Isosceles"]
+        }
+    ]
+}
