@@ -8,7 +8,5 @@ if n < 1 or n > 500000: exit(0)
 #   i = ⌊n / 2⌋;
 #   return A[i]; # 코드1
 # }
-
-# 코드1 실행 횟수: 1.
 print(1)
 print(0)
