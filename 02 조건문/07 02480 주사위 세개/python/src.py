@@ -2,9 +2,9 @@ from sys import exit
 
 # 주사위 눈 a, b, c 입력.
 a, b, c = map(int, input().split())
-if a < 1 or a > 6: exit(0)
-if b < 1 or b > 6: exit(0)
-if c < 1 or c > 6: exit(0)
+if not 1 <= a <= 6: exit()
+if not 1 <= b <= 6: exit()
+if not 1 <= c <= 6: exit()
 
 # 상금 계산.
 if a == b == c:

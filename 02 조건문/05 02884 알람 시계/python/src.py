@@ -2,8 +2,8 @@ from sys import exit
 
 # 시간 h, m 입력.
 h, m = map(int, input().split())
-if h < 0 or h > 23: exit(0)
-if m < 0 or h > 59: exit(0)
+if not 0 <= h <= 23: exit()
+if not 0 <= m <= 60: exit()
 
 # 시간 계산.
 h = (h+23) % 24 if m < 45 else h
