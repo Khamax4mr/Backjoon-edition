@@ -1,11 +1,9 @@
-from sys import exit
+from sys import exit, stdin
 
-while True:
-    try:
-        # 숫자 a, b 입력.
-        a, b = map(int, input().split())
-        if a <= 0 or a >= 10: exit(0)
-        if b <= 0 or b >= 10: exit(0)
-        print(a + b)
-    except:
-        break
+for line in stdin.readlines():
+    # 숫자 a, b 입력.
+    a, b = map(int, line.rstrip().split())
+    if not 0 < a < 10: exit()
+    if not 0 < b < 10: exit()
+    
+    print(a + b)
