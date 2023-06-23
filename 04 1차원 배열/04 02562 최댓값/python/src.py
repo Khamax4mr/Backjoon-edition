@@ -1,8 +1,8 @@
-from sys import exit
+from sys import exit, stdin
 
 # 배열 numbers 입력.
-numbers = [int(input()) for _ in range(9)]
-if True in [number < 1 or number > 100 for number in numbers]: exit(0)
+numbers = [int(line.rstrip()) for line in stdin.readlines()]
+if True in [not 1 <= number <= 100 for number in numbers]: exit()
 
 print(max(numbers))
 print(numbers.index(max(numbers)) + 1)

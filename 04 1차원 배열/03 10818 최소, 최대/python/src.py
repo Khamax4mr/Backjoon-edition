@@ -1,11 +1,9 @@
 from sys import exit
 
-# 정수 개수 n 입력.
 n = int(input())
-if n < 1 or n > 1000000: exit(0)
+if not 1 <= n <= 1000000: exit()
 
-# 배열 numbers 입력.
 numbers = list(map(int, input().split()))
-if True in [number < -1000000 or number > 1000000 for number in numbers]: exit(0)
+if True in [not -1000000 <= number <= 1000000 for number in numbers]: exit()
 
 print(min(numbers), max(numbers))
