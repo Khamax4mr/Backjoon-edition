@@ -1,10 +1,6 @@
-from sys import exit
+from sys import exit, stdin
 
-while True:
-    try:
-        # 문장 sentence 입력.
-        sentence = input()
-        if len(sentence) < 0 or len(sentence) > 100: exit(0)
-        print(sentence)
-    except:
-        break
+for line in stdin.readlines():
+    sentence = line.rstrip()
+    if not 0 <= len(sentence) <= 100: exit()
+    print(sentence)

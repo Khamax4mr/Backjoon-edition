@@ -1,12 +1,11 @@
-from sys import exit
+from sys import exit, stdin
 
 # 테스트 케이스 개수 t 입력.
 t = int(input())
-if t < 1 or t > 10: exit(0)
+if not 1 <= t <= 10: exit()
 
-for _ in range(t):
-    # 문자열 string 입력.
-    string = input()
-    if len(string) < 1 or len(string) > 1000: exit(0)
-
+# 문자열 line 입력.
+for line in stdin.readlines():
+    string = line.rstrip()
+    if not 1 <= len(string) <= 1000: exit()
     print(string[0] + string[-1])

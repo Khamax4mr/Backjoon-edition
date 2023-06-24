@@ -2,7 +2,7 @@ from sys import exit
 
 # 단어 s 입력.
 s = input()
-if len(s) < 0 or len(s) > 100: exit(0)
+if not 0 <= len(s) <= 100: exit()
 
 # 알파벳 배치.
 alphabets = [chr(i) for i in range(ord('a'), ord('z')+1)]

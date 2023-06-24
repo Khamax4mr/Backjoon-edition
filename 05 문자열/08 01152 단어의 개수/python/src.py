@@ -2,6 +2,6 @@ from sys import exit
 
 # 문장 sentence 입력.
 sentence = input()
-if len(sentence) < 1 or len(sentence) > 1000000: exit(0)
+if not 1 <= len(sentence) <= 1000000: exit()
 
 print(len(sentence.split()))

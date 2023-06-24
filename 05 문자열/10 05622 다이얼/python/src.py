@@ -2,7 +2,7 @@ from sys import exit
 
 # 단어 word 입력.
 word = input()
-if len(word) < 2 or len(word) > 15: exit(0)
+if not 2 <= len(word) <= 15: exit()
 
 # 다이얼 번호 배치.
 alphabet_numbers = [2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9, 9, 9]
