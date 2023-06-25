@@ -6,8 +6,8 @@ for _ in range(20):
     # 과목명 name, 학점 score, 등급 grade 입력.
     input_data = input().split()
     name, score, grade = input_data[0], float(input_data[1]), input_data[2]
-    if len(name) < 1 or len(name) > 50: exit(0)
-    if score not in [1.0, 2.0, 3.0, 4.0]: exit(0)
+    if not 1 <= len(name) <= 50: exit()
+    if score not in [1.0, 2.0, 3.0, 4.0]: exit()
     if grade not in ['A+', 'A0', 'B+', 'B0', 'C+', 'C0', 'D+', 'D0', 'F', 'P']: exit(0)
 
     # 학점 × 과목 평점.

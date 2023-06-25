@@ -1,14 +1,14 @@
-from sys import exit
+from sys import exit, stdin
 
 # 단어 개수 n 입력.
 n = int(input())
-if n < 0 or n > 100: exit(0)
+if not 0 <= n <= 100: exit()
 
 group_words = n
-for _ in range(n):
+for line in stdin.readlines():
     # 단어 word 입력.
-    word = input()
-    if len(word) > 100: exit(0)
+    word = line.rstrip()
+    if len(word) > 100: exit()
 
     # 알파벳 사용 내역 확인.
     used_alphabets = ['*']

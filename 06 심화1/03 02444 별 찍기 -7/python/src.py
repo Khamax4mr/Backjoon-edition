@@ -2,7 +2,7 @@ from sys import exit
 
 # 별 층 n 입력.
 n = int(input())
-if n < 1 or n > 100: exit(0)
+if not 1 <= n <= 100: exit()
 
 for i in range(1, n):
     print(f"{' ' * (n-i)}{'*' * (2*i-1)}")

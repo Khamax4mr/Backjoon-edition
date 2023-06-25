@@ -2,7 +2,7 @@ from sys import exit
 
 # 단어 word 입력.
 word = input().upper()
-if len(word) < 0 or len(word) > 1000000: exit(0)
+if not 0 <= len(word) <= 1000000: exit()
 
 # 알파벳 개수 구성.
 alphabets = [chr(i) for i in range(ord('A'), ord('Z')+1)]
