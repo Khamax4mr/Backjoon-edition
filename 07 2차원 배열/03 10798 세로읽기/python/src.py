@@ -4,7 +4,7 @@ vertical_dummy_word = ['*'] * 15 * 5
 for i in range(5):
     # 단어 word 입력.
     word = input()
-    if len(word) < 1 or len(word) > 15: exit(0)
+    if not 1 <= len(word) <= 15: exit()
 
     for j in range(len(word)):
         vertical_dummy_word[j*5 + i] = word[j]
