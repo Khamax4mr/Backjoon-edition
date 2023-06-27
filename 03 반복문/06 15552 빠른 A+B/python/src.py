@@ -5,9 +5,10 @@ t = int(stdin.readline().rstrip())
 if not 0 < t <= 1000000: exit()
 
 sum = []
-for line in stdin.readlines():
+for _ in range(t):
     # 숫자 a, b 입력.
-    a, b = map(int, line.rstrip().split())
+    line = stdin.readline().rstrip()
+    a, b = map(int, line.split())
     if not 1 <= a <= 1000: exit()
     if not 1 <= b <= 1000: exit()
 

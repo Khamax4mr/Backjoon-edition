@@ -1,6 +1,6 @@
-from sys import exit, stdin
+from sys import exit
 
-matrix = sum([list(map(int, line.rstrip().split())) for line in stdin.readlines()], [])
+matrix = sum([list(map(int, input().split())) for _ in range(9)], [])
 if True in [not 0 <= elem <= 100 for elem in matrix]: exit()
 
 max_number = max(matrix)
