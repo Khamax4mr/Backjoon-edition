@@ -3,16 +3,15 @@ from sys import exit
 # 숫자 m, n 입력.
 m = int(input())
 n = int(input())
-if m < 0 or m > 10000: exit(0)
-if n < 0 or n > 10000: exit(0)
+if not 0 <= m <= 10000: exit()
+if not 0 <= n <= 10000: exit()
 
 primes = []
 for number in range(m, n+1):
     # 정의에 따라 소수가 아닌 1 생략.
     if number == 1: continue
 
-    is_dividable = [number % divisor == 0 for divisor in range(2, int(number**0.5)+1)]
-    if True in is_dividable: continue
+    if True in [number % divisor == 0 for divisor in range(2, int(number**0.5)+1)]: continue
     primes.append(number)
 
 if len(primes) == 0:

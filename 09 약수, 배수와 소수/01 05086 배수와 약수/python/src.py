@@ -14,8 +14,8 @@ while True:
     # 숫자 a, b 입력.
     a, b = map(int, input().split())
     if a == 0 and b == 0: break
-    if a < 0 or a > 10000: exit(0)
-    if b < 0 or b > 10000: exit(0)
+    if not 0 <= a <= 10000: exit()
+    if not 0 <= b <= 10000: exit()
 
     if a % b == 0: print('multiple')
     elif gcd(a, b) > 1: print('factor')

@@ -2,11 +2,11 @@ from sys import exit
 
 # 숫자 개수 n 입력.
 n = int(input())
-if n < 0 or n > 100: exit(0)
+if not 0 <= n <= 100: exit()
 
 # 숫자 numbers 입력.
 numbers = list(map(int, input().split()))
-if True in [number < 0 or number > 1000 for number in numbers]: exit(0)
+if True in [not 0 <= number <= 1000 for number in numbers]: exit()
 
 prime_count = 0
 for number in numbers:

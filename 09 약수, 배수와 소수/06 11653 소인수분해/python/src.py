@@ -2,12 +2,20 @@ from sys import exit
 
 # 숫자 n 입력.
 n = int(input())
-if n < 1 or n > 10000000: exit(0)
+if not 1 <= n <= 10000000: exit()
 
-# 정의에 따라 소인수분해가 불가능한 1은 생략.
+# 소인수분해가 불가능하 1은 생략.
 if n == 1: pass
 
-for divisor in range(2, n+1):
-    while n % divisor == 0:
-        print(divisor)
-        n /= divisor
+# 소인수분해 최소 단위 2, 3은 그대로 출력.
+elif n < 4: print(n)
+
+# 나머지 소인수 출력.
+else:
+    for divisor in range(2, round(n**0.5)+1):
+        while n % divisor == 0:
+            print(divisor)
+            n /= divisor
+
+    # 나머지 소인수 출력.
+    if n > 1: print(int(n))
