@@ -4,9 +4,9 @@ from sys import exit
 a = int(input())
 b = int(input())
 c = int(input())
-if a <= 0 or a >= 180: exit(0)
-if b <= 0 or b >= 180: exit(0)
-if c <= 0 or c >= 180: exit(0)
+if not 0 < a < 180: exit()
+if not 0 < b < 180: exit()
+if not 0 < c < 180: exit()
 
 if a + b + c != 180:
     print('Error')

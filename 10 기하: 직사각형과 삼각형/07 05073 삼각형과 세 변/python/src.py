@@ -11,9 +11,9 @@ while True:
     # 세 변의 길이 a, b, c 입력.
     a, b, c = map(int, input().split())
     if a == 0 and b == 0 and c == 0: break
-    if a <= 0 or a > 1000: exit(0)
-    if b <= 0 or b > 1000: exit(0)
-    if c <= 0 or c > 1000: exit(0)
+    if not 0 < a <= 1000: exit()
+    if not 0 < b <= 1000: exit()
+    if not 0 < c <= 1000: exit()
 
     # 각 변을 오름차순 정렬하여 c가 제일 큰 수임을 가정.
     a, b, c = sort_triangle(a, b, c)

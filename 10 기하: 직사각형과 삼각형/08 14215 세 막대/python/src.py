@@ -9,9 +9,9 @@ def sort_triangle(a, b, c):
 
 # 세 변의 길이 a, b, c 입력.
 a, b, c = map(int, input().split())
-if a < 1 or a > 1000: exit(0)
-if b < 1 or b > 1000: exit(0)
-if c < 1 or c > 1000: exit(0)
+if not 1 <= a <= 1000: exit()
+if not 1 <= b <= 1000: exit()
+if not 1 <= c <= 1000: exit()
 
 # 각 변을 오름차순 정렬하여 c가 제일 큰 수임을 가정.
 a, b, c = sort_triangle(a, b, c)

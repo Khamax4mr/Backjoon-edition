@@ -1,21 +1,17 @@
 from sys import exit
 
-# 가로 좌표 목록 x_point, 세로 좌표 목록 y_point 입력.
-x_point, y_point = [], []
+# 가로 좌표 목록 x_points, 세로 좌표 목록 y_points 입력.
+x_points, y_points = [], []
 for _ in range(3):
     x, y = map(int, input().split())
-    if x < 1 or x > 1000: exit(0)
-    if y < 1 or y > 1000: exit(0)
+    if not 1 <= x <= 1000: exit()
+    if not 1 <= y <= 1000: exit()
 
-    x_point.append(x)
-    y_point.append(y)
+    x_points.append(x)
+    y_points.append(y)
 
 # 짝이 없는 좌표를 바탕으로 새로운 좌표 찾기.
-new_x, new_y = 0, 0
-for i in range(3):
-    if x_point.count(x_point[i]) == 1:
-        new_x = x_point[i] 
-    if y_point.count(y_point[i]) == 1:
-        new_y = y_point[i]
-
-print(new_x, new_y)
+x_points.sort()
+y_points.sort()
+print(x_points[2] if x_points[0] == x_points[1] else x_points[0],
+      y_points[2] if y_points[0] == y_points[1] else y_points[0])
