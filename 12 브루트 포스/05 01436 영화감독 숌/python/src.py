@@ -2,7 +2,7 @@ from sys import exit
 
 # 영화 번호 n 입력.
 n = int(input())
-if n <= 0 or n > 10000: exit(0)
+if not 0 < n <= 10000: exit()
 
 numberings, i = [], 0
 while len(numberings) <= n:

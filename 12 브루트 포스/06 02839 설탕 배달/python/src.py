@@ -2,7 +2,7 @@ from sys import exit
 
 # 설탕 용량 n 입력.
 n = int(input())
-if n < 3 or n > 5000: exit(0)
+if not 3 <= n <= 5000: exit()
 
 bag_5kg = n // 5
 remained_n = n % 5

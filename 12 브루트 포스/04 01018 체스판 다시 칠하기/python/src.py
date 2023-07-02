@@ -2,8 +2,8 @@ from sys import exit
 
 # 보드 세로 크기 m, 가로 크기 n 입력.
 m, n = map(int, input().split())
-if m < 8 or m > 50: exit(0)
-if n < 8 or n > 50: exit(0)
+if not 8 <= m <= 50: exit()
+if not 8 <= n <= 50: exit()
 
 wb_mask = 'WB'*(n//2) + 'W'*(n%2)
 wb_fix_counts = [[64 for _ in range(n-7)] for _ in range(m-7)]
