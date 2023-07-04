@@ -1,4 +1,4 @@
-from sys import exit
+from sys import exit, stdin
 
 # 숫자 a, b의 최대공약수를 구하는 함수.
 # return 최대공약수
@@ -10,9 +10,9 @@ def gcd(a, b):
         a, b = max(a, b), min(a, b)
     return b
 
-while True:
+for line in stdin.readlines():
     # 숫자 a, b 입력.
-    a, b = map(int, input().split())
+    a, b = map(int, line.rstrip().split())
     if a == 0 and b == 0: break
     if not 0 <= a <= 10000: exit()
     if not 0 <= b <= 10000: exit()

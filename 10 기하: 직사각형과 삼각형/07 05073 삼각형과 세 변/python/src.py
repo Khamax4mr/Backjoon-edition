@@ -1,4 +1,4 @@
-from sys import exit
+from sys import exit, stdin
 
 # 숫자 a, b, c를 오름차순으로 정렬하는 함수.
 # return 정렬된 a, b, c 리스트.
@@ -7,9 +7,9 @@ def sort_triangle(a, b, c):
     sorted_list.sort()
     return sorted_list
 
-while True:
+for line in stdin.readlines():
     # 세 변의 길이 a, b, c 입력.
-    a, b, c = map(int, input().split())
+    a, b, c = map(int, line.rstrip().split())
     if a == 0 and b == 0 and c == 0: break
     if not 0 < a <= 1000: exit()
     if not 0 < b <= 1000: exit()
