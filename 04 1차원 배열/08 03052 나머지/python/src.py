@@ -1,8 +1,9 @@
 from sys import exit
 
-# 숫자 n 입력.
-n = [int(input()) for _ in range(10)]
-if True in [not 0 <= number <= 1000 for number in n]: exit()
+# 숫자 입력.
+remainer = set()
+for number in [int(input()) for _ in range(10)]:
+    if not 0 <= number <= 1000: exit()
+    remainer.add(number % 42)
 
-remainer = [number % 42 for number in n]
-print(len(set(remainer)))
+print(len(remainer))

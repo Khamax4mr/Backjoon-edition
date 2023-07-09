@@ -5,7 +5,7 @@ word = input().upper()
 if not 0 <= len(word) <= 1000000: exit()
 
 # 알파벳 개수 구성.
-alphabets = [chr(i) for i in range(ord('A'), ord('Z')+1)]
+alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 alphabet_count = [word.count(alphabet) for alphabet in alphabets]
 alphabet_max_count = max(alphabet_count)
 if alphabet_count.count(alphabet_max_count) > 1:

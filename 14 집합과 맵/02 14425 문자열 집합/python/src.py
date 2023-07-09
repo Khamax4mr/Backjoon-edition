@@ -9,8 +9,10 @@ if not 1 <= m <= 10000: exit()
 s = set(stdin.readline().rstrip() for _ in range(n))
 if True in [len(word) > 500 for word in s]: exit()
 
-# 검사 문자열 words 입력.
-words = [stdin.readline().rstrip() for _ in range(m)]
-if True in [len(word) > 500 for word in words]: exit()
+# 검사 문자열 입력.
+found = 0
+for word in [stdin.readline().rstrip() for _ in range(m)]:
+    if len(word) > 500: exit()
+    found += word in s
 
-print(sum([words.count(word) for word in s]))
+print(found)
