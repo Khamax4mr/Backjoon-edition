@@ -8,4 +8,6 @@ if not 1 <= t <= 10: exit()
 for _ in range(t):
     string = input()
     if not 1 <= len(string) <= 1000: exit()
+    if not string.isupper(): exit()
+  
     print(string[0] + string[-1])

@@ -9,6 +9,7 @@ for _ in range(n):
     # 단어 word 입력.
     word = input()
     if len(word) > 100: exit()
+    if not word.islower(): exit()
 
     # 알파벳 사용 내역 확인.
     used_alphabets = ['*']

@@ -9,6 +9,7 @@ for _ in range(n):
     # 이름 name, 출입 기록 action 입력.
     name, action = map(str, stdin.readline().rstrip().split())
     if len(name) > 5: exit()
+    if not name.isalpha(): exit()
     if action not in ['enter', 'leave']: exit()
 
     if action == 'enter':

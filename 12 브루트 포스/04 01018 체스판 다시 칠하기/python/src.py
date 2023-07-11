@@ -9,7 +9,10 @@ wb_mask = 'WB'*(n//2) + 'W'*(n%2)
 wb_fix_counts = [[64 for _ in range(n-7)] for _ in range(m-7)]
 
 for i in range(m):
+    # 보드 한 줄의 색깔 line 입력.
     line = input()
+    if not len(line) == n: exit()
+    if False in [a in 'BW' for a in line]: exit()
 
     # WB로 시작하면 WB 마스크, BW로 시작하면 BW 마스크 적용.
     if i % 2 == 0:
