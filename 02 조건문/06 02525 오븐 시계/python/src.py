@@ -1,11 +1,9 @@
-from sys import exit
-
 # 시간 a, b, c 입력.
 a, b = map(int, input().split())
 c = int(input())
-if not 0 <= a <= 23: exit()
-if not 0 <= b <= 59: exit()
-if not 0 <= c <= 1000: exit()
+assert 0 <= a <= 23
+assert 0 <= b <= 59
+assert 0 <= c <= 1000
 
 # 시간 계산.
 cooking_h, cooking_m = c//60, c%60

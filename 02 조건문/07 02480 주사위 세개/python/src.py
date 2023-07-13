@@ -1,10 +1,8 @@
-from sys import exit
-
 # 주사위 눈 a, b, c 입력.
 a, b, c = map(int, input().split())
-if not 1 <= a <= 6: exit()
-if not 1 <= b <= 6: exit()
-if not 1 <= c <= 6: exit()
+assert 1 <= a <= 6
+assert 1 <= b <= 6
+assert 1 <= c <= 6
 
 # 상금 계산.
 if a == b == c:
