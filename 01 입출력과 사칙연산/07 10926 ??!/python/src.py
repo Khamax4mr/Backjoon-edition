@@ -1,8 +1,6 @@
-from sys import exit
-
 # 아이디 문자 id 입력.
 id = input()
-if len(id) > 50: exit()
-if False in [a.islower() for a in id]: exit()
+assert len(id) <= 50
+assert True in [not a.islower() for a in id]
 
 print(id + "??!")
