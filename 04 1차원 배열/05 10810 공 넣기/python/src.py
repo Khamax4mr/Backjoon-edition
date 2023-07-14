@@ -14,4 +14,4 @@ for _ in range(m):
 
     basket[i : j+1] = [k] * (j - i + 1)
 
-print(' '.join(str(x) for x in basket[1:]))
+print(' '.join(map(str, basket[1:])))

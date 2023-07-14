@@ -10,4 +10,4 @@ for number in tuple(map(int, input().split())):
     if number >= x: continue
     numbers_under_x.append(number)
 
-print(' '.join(str(x) for x in numbers_under_x))
+print(' '.join(map(str, numbers_under_x)))

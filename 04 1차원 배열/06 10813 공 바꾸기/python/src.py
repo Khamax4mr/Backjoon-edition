@@ -13,4 +13,4 @@ for _ in range(m):
 
     basket[i], basket[j] = basket[j], basket[i]
 
-print(' '.join(str(x) for x in basket[1:]))
+print(' '.join(map(str, basket[1:])))
