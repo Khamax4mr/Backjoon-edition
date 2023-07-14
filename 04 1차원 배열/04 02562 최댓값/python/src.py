@@ -1,8 +1,6 @@
-from sys import exit
-
 # 배열 numbers 입력.
-numbers = [int(input()) for _ in range(9)]
-if True in [not 1 <= number <= 100 for number in numbers]: exit()
+numbers = tuple(int(input()) for _ in range(9))
+assert not False in [1 <= number <= 100 for number in numbers]
 
 print(max(numbers))
 print(numbers.index(max(numbers)) + 1)
