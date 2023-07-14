@@ -1,11 +1,10 @@
-from sys import exit
+import string
+alphabets = string.ascii_lowercase
 
 # 단어 s 입력.
 s = input()
-if not 0 <= len(s) <= 100: exit()
-if not s.islower(): exit()
+assert 0 <= len(s) <= 100
+assert s.islower()
 
-# 알파벳 배치.
-alphabets = 'abcdefghijklmnopqrstuvwxyz'
-alphabet_index = [s.find(alphabet) for alphabet in alphabets]
-print(' '.join(list(map(str, alphabet_index))))
+alphabet_index = tuple(s.find(alphabet) for alphabet in alphabets)
+print(' '.join(map(str, alphabet_index)))

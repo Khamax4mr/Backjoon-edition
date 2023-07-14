@@ -1,6 +1,7 @@
-from sys import exit, stdin
+import sys
+readlines = sys.stdin.readlines
 
-for line in stdin.readlines():
+for line in readlines():
     sentence = line.rstrip()
-    if not 0 <= len(sentence) <= 100: exit()
+    assert 0 <= len(sentence) <= 100
     print(sentence)

@@ -1,10 +1,9 @@
-from sys import exit
-
 # 숫자 개수 n 입력.
 n = int(input())
-if not 1 <= n <= 100: exit()
+assert 1 <= n <= 100
 
 # 공백 없는 숫자들 numbers 입력.
-numbers = list(map(int, input()))
-if True in [not 0 <= number <= 9 for number in numbers]: exit()
+numbers = tuple(map(int, input()))
+assert not False in [0 <= number <= 9 for number in numbers]
+
 print(sum(numbers))
