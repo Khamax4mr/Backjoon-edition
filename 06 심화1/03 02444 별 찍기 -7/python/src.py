@@ -1,8 +1,6 @@
-from sys import exit
-
 # 별 층 n 입력.
 n = int(input())
-if not 1 <= n <= 100: exit()
+assert 1 <= n <= 100
 
 for i in range(1, n):
     print(f"{' ' * (n-i)}{'*' * (2*i-1)}")
