@@ -1,7 +1,6 @@
-from sys import exit
-
+# 이차원 배열 matrix 입력.
 matrix = sum([list(map(int, input().split())) for _ in range(9)], [])
-if True in [not 0 <= elem <= 100 for elem in matrix]: exit()
+assert not False in [0 <= elem <= 100 for elem in matrix]
 
 max_number = max(matrix)
 max_pos = matrix.index(max_number)
