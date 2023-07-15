@@ -1,11 +1,13 @@
-from sys import exit
+import string
+
+# 숫자 범위 설정.
+numberings = string.digits + string.ascii_uppercase
 
 # 숫자 n, 진법 b 입력.
 n, b = map(int, input().split())
-if not 0 < n <= 1000000000: exit()
-if not 2 <= b <= 36: exit()
+assert 0 < n <= 1000000000
+assert 2 <= b <= 36
 
-numberings = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 converted_n = ''
 while n > 0:
     converted_n += numberings[n % b]
