@@ -1,10 +1,8 @@
-from sys import exit
-
 # 숫자 m, n 입력.
 m = int(input())
 n = int(input())
-if not 0 <= m <= 10000: exit()
-if not 0 <= n <= 10000: exit()
+assert 0 <= m <= 10000
+assert 0 <= n <= 10000
 
 primes = []
 for number in range(m, n+1):

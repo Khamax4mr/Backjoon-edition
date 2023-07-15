@@ -1,8 +1,6 @@
-from sys import exit
-
 # 숫자 n 입력.
 n = int(input())
-if not 1 <= n <= 10000000: exit()
+assert 1 <= n <= 10000000
 
 # 소인수분해가 불가능하 1은 생략.
 if n == 1: pass

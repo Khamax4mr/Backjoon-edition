@@ -1,14 +1,15 @@
-from sys import exit
+import sys
+readlines = sys.stdin.readlines
 
-while True:
+for line in readlines():
     # 숫자 n 입력.
-    n = int(input())
+    n = int(line)
     if n == -1: break
-    if not 2 < n < 100000: exit()
+    assert 2 < n < 100000
 
     # 최소한의 반복으로 약수 판단 후 전체 약수 목록 구성.
     base_divisors = [divisor for divisor in range(2, int(n**0.5)+1) if n % divisor == 0]
-    divisors = list(sorted(set([1] + base_divisors + [n//divisor for divisor in base_divisors])))
+    divisors = sorted(set([1] + base_divisors + [n//divisor for divisor in base_divisors]))
     if n == sum(divisors):
         print(f"{n} = {' + '.join(map(str, divisors))}")
     else:
