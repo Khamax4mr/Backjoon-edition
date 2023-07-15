@@ -1,12 +1,10 @@
-from sys import exit
-
 # 세 각 a, b, c 입력.
 a = int(input())
 b = int(input())
 c = int(input())
-if not 0 < a < 180: exit()
-if not 0 < b < 180: exit()
-if not 0 < c < 180: exit()
+assert 0 < a < 180
+assert 0 < b < 180
+assert 0 < c < 180
 
 if a + b + c != 180:
     print('Error')

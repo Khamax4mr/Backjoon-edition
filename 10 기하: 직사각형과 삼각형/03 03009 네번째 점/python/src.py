@@ -1,11 +1,9 @@
-from sys import exit
-
 # 가로 좌표 목록 x_points, 세로 좌표 목록 y_points 입력.
 x_points, y_points = [], []
 for _ in range(3):
     x, y = map(int, input().split())
-    if not 1 <= x <= 1000: exit()
-    if not 1 <= y <= 1000: exit()
+    assert 1 <= x <= 1000
+    assert 1 <= y <= 1000
 
     x_points.append(x)
     y_points.append(y)
