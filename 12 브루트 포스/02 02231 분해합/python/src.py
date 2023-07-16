@@ -1,8 +1,6 @@
-from sys import exit
-
 # 자연수 n 입력.
 n = int(input())
-if not 1 <= n <= 1000000: exit()
+assert 1 <= n <= 1000000
 
 constructors = []
 for number in range(n-1, 0, -1):
