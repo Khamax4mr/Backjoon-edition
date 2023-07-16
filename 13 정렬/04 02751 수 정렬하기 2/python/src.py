@@ -1,10 +1,11 @@
-from sys import exit, stdin
+import sys
+readline = sys.stdin.readline
 
 n = int(input())
-if not 1 <= n <= 1000000: exit()
+assert 1 <= n <= 1000000
 
-numbers = [int(stdin.readline().rstrip()) for _ in range(n)]
-if True in [not -1000000 <= number <= 1000000 for number in numbers]: exit()
+numbers = [int(readline().rstrip()) for _ in range(n)]
+assert not False in [-1000000 <= number <= 1000000 for number in numbers]
 
 numbers.sort()
 print('\n'.join(map(str, numbers)))
