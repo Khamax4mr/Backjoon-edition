@@ -1,8 +1,6 @@
-from sys import exit
-
 # 입력 크기 n 입력.
 n = int(input())
-if not 1 <= n <= 500000: exit()
+assert 1 <= n <= 500000
 
 # MenOfPassion(A[], n) {
 #   sum <- 0;
