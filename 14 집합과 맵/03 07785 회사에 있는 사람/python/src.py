@@ -1,16 +1,17 @@
-from sys import exit, stdin
+import sys
+readline = sys.stdin.readline
 
 # 출입 기록 개수 n 입력.
 n = int(input())
-if not 2 <= n <= 100000: exit()
+assert 2 <= n <= 100000
 
 in_company = set()
 for _ in range(n):
     # 이름 name, 출입 기록 action 입력.
-    name, action = map(str, stdin.readline().rstrip().split())
-    if len(name) > 5: exit()
-    if not name.isalpha(): exit()
-    if action not in ['enter', 'leave']: exit()
+    name, action = map(str, readline().rstrip().split())
+    assert len(name) <= 5
+    assert name.isalpha()
+    assert action in ('enter', 'leave')
 
     if action == 'enter':
         in_company.add(name)

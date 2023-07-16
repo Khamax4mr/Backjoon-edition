@@ -1,19 +1,20 @@
-from sys import exit, stdin
+import sys
+readline = sys.stdin.readline
 
 # 보유 카드 개수 n 입력.
 n = int(input())
-if not 1 <= n <= 500000: exit()
+assert 1 <= n <= 500000
 
 # 보유 카드 숫자 hands 입력.
-hands = set(map(int, stdin.readline().rstrip().split()))
-if True in [not -10000000 <= number <= 10000000 for number in hands]: exit()
+hands = set(map(int, readline().rstrip().split()))
+assert not False in [-10000000 <= number <= 10000000 for number in hands]
 
 # 비교 카드 개수 m 입력.
 m = int(input())
-if not 1 <= n <= 500000: exit()
+assert 1 <= n <= 500000
 
 # 비교 카드 숫자 matches 입력.
-matches = list(map(int, stdin.readline().rstrip().split()))
-if True in [not -10000000 <= number <= 10000000 for number in matches]: exit()
+matches = tuple(map(int, readline().rstrip().split()))
+assert not False in [-10000000 <= number <= 10000000 for number in matches]
 
-print(' '.join(map(str, [1 if number in hands else 0 for number in matches])))
+print(' '.join(map(str, tuple(1 if number in hands else 0 for number in matches))))
