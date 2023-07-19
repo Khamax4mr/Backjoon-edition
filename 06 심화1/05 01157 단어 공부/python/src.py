@@ -3,8 +3,8 @@ alphabets = string.ascii_uppercase
 
 # 단어 word 입력.
 word = input()
-if not 0 <= len(word) <= 1000000: exit()
-if not word.isalpha(): exit()
+assert 0 <= len(word) <= 1000000
+assert word.isalpha()
 word = word.upper()
 
 # 알파벳 개수 구성.
