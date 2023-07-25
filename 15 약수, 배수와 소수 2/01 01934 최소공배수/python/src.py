@@ -1,11 +1,5 @@
-# 숫자 a, b의 최소공배수를 구하는 함수.
-# return 최소공배수
-def lcm(a, b):
-    # a를 큰 숫자로 가정.
-    aa, bb = max(a, b), min(a, b)
-    while aa % bb:
-        aa, bb = bb, aa%bb
-    return int(a * b / bb)
+import math
+lcm = math.lcm
 
 # 테스트케이스 개수 t 입력.
 t = int(input())

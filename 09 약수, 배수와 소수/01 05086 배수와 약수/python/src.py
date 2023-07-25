@@ -1,15 +1,6 @@
-import sys
+import sys, math
 readlines = sys.stdin.readlines
-
-# 숫자 a, b의 최대공약수를 구하는 함수.
-# return 최대공약수
-def gcd(a, b):
-    # a를 큰 숫자로 가정.
-    a, b = max(a, b), min(a, b)
-    while (a % b) and (b > 1):
-        a = a % b
-        a, b = max(a, b), min(a, b)
-    return b
+gcd = math.gcd
 
 for line in readlines():
     # 숫자 a, b 입력.
